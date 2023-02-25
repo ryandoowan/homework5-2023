@@ -1,0 +1,151 @@
+@keyframes logoDiv {
+    from {width: 25px; opacity: 0;}
+    to {width: 475px; opacity: 1;}
+}
+
+#logo {
+    animation-name: logoDiv;
+    animation-duration: 5s;
+}
+
+body {
+    font-family: 'Poppins', serif;
+    background-image: url("images/concrete_seamless.png");
+    background-color: #f1f1f1;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .nav_links {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.nav_item a:visited{
+    color: blue;
+}
+
+.nav_item a:hover, a:focus{
+    color: #50C7C7;
+    text-decoration: underline;
+    -webkit-text-decoration-style: dotted;
+            text-decoration-style: dotted;
+  }
+
+.card > header {
+    background-color: #288088;
+    border: 2px, solid, #45ADAD;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.card {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    flex-basis: 450px;
+}
+
+div.pricing {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.gallery > img {
+    border: solid 10px #50C7C7;
+    width: 300px;
+    margin: 10px;
+}
+
+.gallery {
+    display: inline-flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media screen and (min-width: 900px)  {
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    nav .nav_links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex-basis: 275px;
+    }
+
+    div.pricing {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    body > header {
+        position: sticky;
+        top: 0;
+    }
+}
+
+@media (prefers-reduced-motion) {
+    #logo {
+        animation-duration: 0s;
+    }
+}
+
+@media print  {
+    body {
+        font-family: Arial, Helvetica;
+        background-image: none;
+    }
+
+    nav {
+        width: 100%
+    }
+    
+    nav .nav_links {
+        display: flex;
+        flex-direction: row;
+        align-items: space-evenly;
+        justify-content: space-evenly;
+    }
+
+    .card {
+        border: 2px solid #45ADDD;
+        flex-basis: 325px;
+    }
+
+    div.pricing {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #gallery {
+        display: none;
+    }
+
+    .gallery {
+        display: none;
+    }
+
+}
