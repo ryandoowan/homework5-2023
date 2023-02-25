@@ -41,7 +41,7 @@ nav .nav_links {
 
 .card > header {
     background-color: #288088;
-    border: 2px, solid, #45ADAD;
+    border: 2px solid #45ADAD;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
 }
@@ -119,11 +119,10 @@ div.pricing {
     nav {
         width: 100%
     }
-    
+
     nav .nav_links {
         display: flex;
         flex-direction: row;
-        align-items: space-evenly;
         justify-content: space-evenly;
     }
 
